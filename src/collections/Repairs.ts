@@ -10,6 +10,7 @@ export const Repairs: CollectionConfig = {
   },
   access: publicContent,
   fields: [
+    { name: 'bookings', type: 'join', collection: 'bookings', on: 'repairs' },
     {
       name: 'name',
       type: 'text',

@@ -32,6 +32,7 @@ export const Bookings: CollectionConfig = {
     ],
   },
   fields: [
+    { name: 'repairs', type: 'relationship', relationTo: 'repairs', hasMany: true },
     // Every booking belongs to exactly one time slot. A later exercise in the course adds a second
     // relationship here: repairs.
     {
